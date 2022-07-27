@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  overflow-y: hidden;
+}
+
+.main-section {
+  height: 130vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url(./img/sky.png);
+  perspective: 10px;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.img-p,
+.img-p1,
+.img-p2,
+.img-s {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.img-p {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.img-p1 {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.img-p2 {
+  transform: translateZ(0px);
+}
+
+.img-s {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.p-container {
+  background-color: #111;
+}
+
+.p {
+  color: #fff;
+}
